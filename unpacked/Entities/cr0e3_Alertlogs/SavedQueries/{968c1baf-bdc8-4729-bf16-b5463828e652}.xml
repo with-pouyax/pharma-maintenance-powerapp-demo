@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{968c1baf-bdc8-4729-bf16-b5463828e652}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr0e3_equipmentname" select="1" icon="1" preview="1">
+        <row name="result" id="cr0e3_alertlogsid">
+          <cell name="cr0e3_equipmentname" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr0e3_alertlogs">
+          <attribute name="cr0e3_alertlogsid" />
+          <attribute name="cr0e3_equipmentname" />
+          <attribute name="createdon" />
+          <order attribute="cr0e3_equipmentname" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Alert logs Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

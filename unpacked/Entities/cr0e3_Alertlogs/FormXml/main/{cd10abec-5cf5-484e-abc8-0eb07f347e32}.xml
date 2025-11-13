@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{cd10abec-5cf5-484e-abc8-0eb07f347e32}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{8ffd97f0-8d3e-4805-80d1-6251f6ecb73f}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e5736f06-9e8e-496d-9c12-6b158afd90fe}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8db38051-38ce-4ed6-a699-dad0f12fe339}">
+                        <labels>
+                          <label description="EquipmentName" languagecode="1033" />
+                        </labels>
+                        <control id="cr0e3_equipmentname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr0e3_equipmentname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ffe26da7-1233-454b-b818-315eb5c15ab7}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{454717a9-152c-4bc7-adc3-5a1773f72b72}">
+                        <labels>
+                          <label description="RecordID" languagecode="1033" />
+                        </labels>
+                        <control id="cr0e3_recordid" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr0e3_recordid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed0df0cb-975f-4d0d-8a45-db1a1d36b836}">
+                        <labels>
+                          <label description="TechnicianName" languagecode="1033" />
+                        </labels>
+                        <control id="cr0e3_technicianname" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr0e3_technicianname" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21b7112e-aa5a-4728-b8f5-7162873a2131}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="cr0e3_inspectionstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr0e3_inspectionstatus" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79768829-0dbc-488c-927f-e116041b7ecf}">
+                        <labels>
+                          <label description="CheckDate" languagecode="1033" />
+                        </labels>
+                        <control id="cr0e3_inspectiondate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="cr0e3_inspectiondate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{85471223-6bf0-4809-9edd-633cb39a7dd4}">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr0e3_inspectionnotes" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr0e3_inspectionnotes" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

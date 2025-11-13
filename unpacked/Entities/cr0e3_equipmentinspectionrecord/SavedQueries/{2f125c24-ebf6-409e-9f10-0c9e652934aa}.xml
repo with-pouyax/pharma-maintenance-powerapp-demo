@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2f125c24-ebf6-409e-9f10-0c9e652934aa}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr0e3_equipmentname" select="1" icon="1" preview="1">
+        <row name="result" id="cr0e3_equipmentinspectionrecordid">
+          <cell name="cr0e3_equipmentname" width="300" />
+          <cell name="cr0e3_recordid" width="150" />
+          <cell name="cr0e3_technicianname" width="150" />
+          <cell name="cr0e3_inspectionstatus" width="150" />
+          <cell name="cr0e3_inspectiondate" width="150" />
+          <cell name="cr0e3_inspectionnotes" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr0e3_equipmentinspectionrecord">
+          <attribute name="cr0e3_equipmentinspectionrecordid" />
+          <attribute name="cr0e3_equipmentname" />
+          <attribute name="createdon" />
+          <order attribute="cr0e3_equipmentname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr0e3_recordid" />
+          <attribute name="cr0e3_technicianname" />
+          <attribute name="cr0e3_inspectionstatus" />
+          <attribute name="cr0e3_inspectiondate" />
+          <attribute name="cr0e3_inspectionnotes" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Equipment Inspection Record" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
