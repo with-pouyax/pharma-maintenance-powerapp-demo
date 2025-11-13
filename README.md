@@ -36,33 +36,6 @@ The Power BI report is fully editable and located in `/powerbi/`.
 
 ------------------------------------------------------------------------
 
-## 🧱 Solution Architecture
-
-       +---------------------------+
-       |      Canvas App          |
-       |  (Technician Interface)  |
-       +------------+-------------+
-                    |
-                    v
-       +---------------------------+
-       |    maintenanceLog         |
-       |    Dataverse              |
-       +-------------+-------------+
-                     |
-                     v
-       +---------------------------+
-       |     Power Automate Flow   |
-       |  (Critical status →       |
-       |   AlertLogs dataverse)    |
-       +-------------+-------------+
-                     |
-                     v
-       +---------------------------+
-       |       Power BI Report     |
-       +---------------------------+
-
-------------------------------------------------------------------------
-
 ## 📂 Repository Structure
 
     pharma-maintenance-powerapp-demo/
@@ -89,40 +62,7 @@ The Power BI report is fully editable and located in `/powerbi/`.
 
 This layout follows Microsoft ALM best practices.
 
-------------------------------------------------------------------------
 
-## 🚀 How to Import the Power Apps Solution
-
-1.  Go to **Power Apps → Solutions**
-2.  Click **Import**
-3.  Select the file:\
-    `solution/PharmaMaintenanceDemo.zip`
-4.  Complete the wizard
-5.  After import, manually update:
-    -   Connections\
-    -   Environment variables (if any)\
-    -   Flow activation\
-6.  Open the Canvas App from the solution and test it
-
-------------------------------------------------------------------------
-
-## 📊 Power BI Dashboard
-
-The Power BI report is located at:
-
-    /powerbi/MaintenanceDashboard.pbix
-
-To open it:
-
-1.  Download the `.pbix` file\
-2.  Open in **Power BI Desktop**\
-3.  Reconnect to your Dataverse environment (Home → Transform Data →
-    Data Source Settings)
-
-The report includes: - Maintenance KPI cards\
-- Task distribution charts\
-- Equipment issue breakdown\
-- Technician activity insights
 
 ------------------------------------------------------------------------
 
@@ -141,9 +81,4 @@ The report includes: - Maintenance KPI cards\
 
 Equipment maintenance management system for technicians to log maintenance events with automated critical status handling and Power BI analytics.
 
-------------------------------------------------------------------------
 
-## 📬 Contact
-
-If you'd like more details about how this was built or want to discuss
-workflow improvements, feel free to reach out.
