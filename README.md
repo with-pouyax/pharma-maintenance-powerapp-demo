@@ -20,7 +20,7 @@ Dataverse maintenanceLog
 | --- | --- |
 | Canvas app | [Unpacked solution](unpacked) |
 | Dataverse & automation | Solution metadata under [`unpacked/`](unpacked) |
-| Analytics | [Power BI files](powerbi) |
+| Analytics | [`powerbi/Takeda.pbix`](powerbi/Takeda.pbix) (legacy filename) |
 
 The unpacked solution is text-friendly for review. Importing it into a Power Platform environment requires the relevant services and environment configuration; the PBIX is for inspection in Power BI Desktop. This repository is a demonstration of structure and integration, not a hosted service or production template.
 
