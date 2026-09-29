@@ -1,84 +1,31 @@
-# Pharma Maintenance PowerApp Demo
+![maintenance demo cover](assets/cover.svg)
 
-This repository contains a **Power Platform maintenance management system**.
+# Pharma maintenance · Power Platform demo
 
-> ⚠️ **Disclaimer**\
-> This is an **independent personal demo**.\
-> It is **not an official product**, and it does **not** contain any
-> confidential or proprietary information from any company.\
-> All data inside this solution is **sample data** created solely for
-> demonstration and educational purposes.
+An **independent portfolio project** using synthetic equipment and maintenance data. It demonstrates a technician-facing Canvas app, Dataverse tables, an alert flow and a Power BI report.
 
-------------------------------------------------------------------------
+> This is not a Takeda product or deployment. No employer, patient, or proprietary data is included.
 
-## 📌 Project Overview
+## Workflow
 
-Equipment maintenance system built on Microsoft Power Platform:
+```text
+Technician log in Power Apps
+          ↓
+Dataverse maintenanceLog
+          ├── critical status → Power Automate → AlertLogs
+          └── reporting → Power BI
+```
 
-### **✔ Power Apps (Canvas App)**
+| Layer | What to inspect |
+| --- | --- |
+| Canvas app | [Unpacked solution](unpacked) |
+| Dataverse & automation | Solution metadata under [`unpacked/`](unpacked) |
+| Analytics | [Power BI files](powerbi) |
 
-App for technicians to enter new maintenance logs. Adding, removing, or modifying entries in the app updates the `maintenanceLog` dataverse.
+The unpacked solution is text-friendly for review. Importing it into a Power Platform environment requires the relevant services and environment configuration; the PBIX is for inspection in Power BI Desktop. This repository is a demonstration of structure and integration, not a hosted service or production template.
 
-### **✔ Dataverse Tables**
+## Why this project
 
-- **`maintenanceLog`** --- dataverse that the app is built on top of
-- **`AlertLogs`** --- automatically created by Power Automate for critical status entries
+It shows how operational data moves from capture to rule-based handling and reporting, with the app, automation and report represented together. Technologies: Power Apps, Power Fx, Dataverse, Power Automate, Power BI, Git and the Power Platform CLI.
 
-### **✔ Power Automate Flow**
-
-When a technician enters a log and machine status is critical, Power Automate automatically creates an entry in the `AlertLogs` dataverse.
-
-### **✔ Power BI Dashboard**
-
-Power BI dashboard built on top of the dataverse data.
-
-The Power BI report is fully editable and located in `/powerbi/`.
-
-------------------------------------------------------------------------
-
-## 📂 Repository Structure
-
-    pharma-maintenance-powerapp-demo/
-    │
-    ├── solution/
-    │   └── PharmaMaintenanceDemo.zip        # Exported unmanaged solution
-    │
-    ├── unpacked/                            # Text-based source version of the solution
-    │   ├── CanvasApps/
-    │   ├── Workflows/
-    │   ├── Customizations.xml
-    │   └── ... (Dataverse + Flow metadata)
-    │
-    ├── powerbi/
-    │   └── MaintenanceDashboard.pbix         # Power BI dashboard
-    │
-    ├── documentation/
-    │   ├── explanation.md (optional)
-    │   └── screenshots/ (optional)
-    │
-    ├── LICENSE
-    ├── .gitignore
-    └── README.md
-
-This layout follows Microsoft ALM best practices.
-
-
-
-------------------------------------------------------------------------
-
-## 🛠️ Tools Used
-
--   **Power Apps (Canvas)**\
--   **Microsoft Dataverse**\
--   **Power Automate**\
--   **Power BI Desktop**\
--   **Power Platform CLI (PAC)**\
--   **Git & GitHub**
-
-------------------------------------------------------------------------
-
-## 🎯 Purpose
-
-Equipment maintenance management system for technicians to log maintenance events with automated critical status handling and Power BI analytics.
-
-
+[License](LICENSE).
